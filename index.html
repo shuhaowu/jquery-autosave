@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Input autosave demo</title>
+</head>
+
+<form>
+  <label>Title</label>
+  <br />
+  <input type="text" data-autosave="title" placeholder="Title" id="title" />
+  <br />
+  <label>Body</label>
+  <br />
+  <textarea data-autosave="body" placeholder="Body"></textarea>
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery-autosave.js"></script>
+<script>
+$(function() {
+    $("body").autosave("setup");
+});
+</script>
+</html>
